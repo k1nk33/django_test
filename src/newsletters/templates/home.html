@@ -1,1 +1,16 @@
-<H1>Hello</H1>
+<h1>{{ template_title }}</h1>
+<!-- Ties to User variable in the context field, views.py -->
+{# {{ user }} #}
+
+{# Form method set to Post data #}
+{# Action is where the data goes to, empty = root #}
+{# Cross Site Request Forgery token, Django requires to Post data  #}
+<form method='POST' action=''>{% csrf_token %}
+
+<!-- Present the Form variable in paragraph format -->
+{{ form.as_p }}
+
+{# Django comment, add a submit button to the form #}
+<input type='submit' value='Sign Up' />
+
+</form>
