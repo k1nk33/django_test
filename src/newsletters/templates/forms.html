@@ -1,0 +1,9 @@
+<form method='POST' action=''>{% csrf_token %}
+
+<!-- Present the Form variable in paragraph format -->
+{{ form.as_p }}
+
+{# Django comment, add a submit button to the form #}
+<input type='submit' value='Submit' />
+
+</form>
