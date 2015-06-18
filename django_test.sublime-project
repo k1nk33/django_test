@@ -12,6 +12,9 @@
 	[
 		{
 			"path": "src"
+		},
+		{
+			"path": "static_in_venv"
 		}
 	]
 }

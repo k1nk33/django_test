@@ -7,6 +7,7 @@ class ContactForm(forms.Form):
     name = forms.CharField()
     email = forms.EmailField()
     message = forms.CharField(required=False)
+    ### Must look into form widgets !
 
 
 class SignUpForm(forms.ModelForm):
